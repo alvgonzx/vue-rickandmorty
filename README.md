@@ -1,14 +1,21 @@
-# vue-rickandmorty
+# Rick and morty
 
-This template should help get you started developing with Vue 3 in Vite.
+<p>
+    ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) 
+    ![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D) 
+    ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+</p>
 
-## Recommended IDE Setup
+This is a simple web application built with Vue.js that lets you explore information about the characters from the popular TV show Rick and Morty.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+> [!WARNING]  
+> This is my first Vue project, don't use this repo as an example as it may contain errors.
 
-## Customize configuration
+## Technologies
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+-   Vite ⚡
+-   VueJS 🟢
+-   Tailwind 🔷
 
 ## Project Setup
 
@@ -16,13 +23,13 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Setup development enviroment
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Compile for Production
 
 ```sh
 npm run build
