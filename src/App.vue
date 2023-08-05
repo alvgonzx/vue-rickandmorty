@@ -51,7 +51,7 @@ next();
     </header>
 
     <main>
-        <div class="flex lg:flex-wrap flex-col lg:flex-row lg:w-full">
+        <div class="flex xl:flex-wrap flex-col xl:flex-row xl:w-full">
             <Character
                 v-for="character in characters"
                 :key="character.id"
