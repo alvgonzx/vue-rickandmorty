@@ -2,16 +2,21 @@
 import { ref } from "vue";
 import Character from "./components/Character.vue";
 
+const characters = ref([]);
+const page = ref(1);
+
 const fetchCharacters = async (page) => {
     const response = await fetch(
         `https://rickandmortyapi.com/api/character?page=${page}`
     );
     const data = await response.json();
-    console.log(data);
+
+    characters.value = data.results;
 };
 
-fetchCharacters(4);
+fetchCharacters(page.value);
 </script>
+
 
 <template>
     <header>
@@ -26,11 +31,8 @@ fetchCharacters(4);
     </header>
 
     <main>
-        <div class="flex flex-col lg:flex-row lg:w-full">
-            <Character />
-            <Character />
-            <Character />
-            <Character />
+        <div class="flex lg:flex-wrap flex-col lg:flex-row lg:w-full" >
+            <Character v-for="character in characters" :key="character.id" :name="character.name" :status="character.status" :species="character.species" img="" />
         </div>
     </main>
 </template>
