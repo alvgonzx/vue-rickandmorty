@@ -64,14 +64,14 @@ next();
         <div class="flex justify-center pb-4">
             <button
                 @click="previous"
-                class="bg-yellow-500 text-white text-center mx-auto py-2 px-4 rounded-md disabled:bg-gray-300 disabled:text-gray-100"
+                class="bg-yellow-500 hover:bg-yellow-600 text-white text-center mx-auto py-2 px-4 rounded-md disabled:bg-gray-300 disabled:text-gray-100"
                 :disabled="checkDisabled(DISABLED_PREVIOUS)"
             >
                 Previous page
             </button>
             <button
                 @click="next"
-                class="bg-red-500 text-white text-center mx-auto py-2 px-4 rounded-md disabled:bg-gray-300 disabled:text-gray-100"
+                class="bg-red-500 hover:bg-red-600 text-white text-center mx-auto py-2 px-4 rounded-md disabled:bg-gray-300 disabled:text-gray-100"
                 :disabled="checkDisabled(DISABLED_NEXT)"
             >
                 Next page
